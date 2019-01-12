@@ -10,6 +10,8 @@
             <p>
                 <a href="">{{ job['employer_name'] }}</a>
                 <br>
+                <a href="">{{ job['salary'] }}</a>
+                <br>
                 <a href="">{{ job['description'] }}</a>
             </p>
         </div>
@@ -19,7 +21,7 @@
 
 {% macro show_jobs(jobs) %}
 
-<div class="column is-multiline">
+<div class="columns is-multiline">
     {% for job in jobs %}
         <div class="column is-half">
             {{ show_job(job) }}
